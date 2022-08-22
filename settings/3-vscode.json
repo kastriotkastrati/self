@@ -1,0 +1,56 @@
+{
+    "editor.fontSize": 15,
+    "workbench.activityBar.visible": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.fontFamily": "'Fira Code Thin', Consolas, 'Courier New', monospace",
+
+    // mine
+
+    //eslint
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"],
+
+    "workbench.colorCustomizations": {
+        "editor.background": "#0f0f11",
+        "editor.inactiveSelectionBackground": "#000",
+        "sideBar.background": "#0F0F11",
+        "sideBarSectionHeader.border": "#0F0F11",
+        "panel.background": "#0F0F11",
+        "activityBar.background": "#0F0F11",
+        "editorGroupHeader.tabsBackground": "#0F0F11",
+        "tab.inactiveBackground": "#0F0F11",
+        "tab.activeBackground": "#020202",
+        "tab.activeBorder": "#0F0F11",
+        "breadcrumb.background": "#0F0F11",
+        "statusBar.background": "#0F0F11",
+        "sideBar.border": "#000",
+        "titleBar.border": "#0F0F11",
+        "statusBar.border": "#0F0F11",
+        "menu.border": "#0F0F11",
+        "contrastBorder": "#0F0F11",
+        "panel.border": "#0F0F11",
+        "editorRuler.foreground": "#0F0F11",
+        "tab.border": "#0F0F11",
+        "tab.lastPinnedBorder": "#0F0F11",
+        "activityBar.border": "#0F0F11",
+        "editorGutter.background": "#0F0F11",
+        "editor.lineHighlightBackground": "#0c0c0c",
+        "editor.selectionBackground": "#000",
+        "editor.selectionHighlightBackground": "#0F0F0F",
+        "titleBar.activeBackground": "#000",
+        "titleBar.activeForeground": "#aaa",
+        "list.hoverBackground": "#000",
+        "list.hoverForeground": "#aaa",
+        "list.activeSelectionBackground": "#000",
+        "list.activeSelectionForeground": "#aaa",
+        "list.inactiveSelectionBackground": "#000",
+        "sideBarTitle.foreground": "#aaa",
+        "sideBarSectionHeader.foreground": "#aaa",
+        "sideBarSectionHeader.background": "#000",
+        "editorIndentGuide.activeBackground": "#222",
+        "editorIndentGuide.background": "#222"
+      },
+      "workbench.colorTheme": "One Dark Pro",
+}
