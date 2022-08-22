@@ -1,0 +1,111 @@
+
+  "workbench.activityBar.visible": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.cursorStyle": "block",
+"editor.links": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.theme": "classic",
+  "editor.lightbulb.enabled": false,
+  "editor.inlayHints.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontWeight": null,
+  "breadcrumbs.filePath": "off",
+  "workbench.tree.renderIndentGuides": "none",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Fira Code Light', Consolas, 'Courier New', monospace",
+  "python.defaultInterpreterPath": "C:\\Users\\kastriotk\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+  "editor.colorDecorators": false,
+  "workbench.colorCustomizations": {
+    "editor.background": "#080808",
+    "editor.inactiveSelectionBackground": "#000",
+    "sideBar.background": "#080808",
+    "sideBarSectionHeader.border": "#080808",
+    "panel.background": "#080808",
+    "activityBar.background": "#080808",
+    "editorGroupHeader.tabsBackground": "#080808",
+    "tab.inactiveBackground": "#080808",
+    "tab.activeBackground": "#020202",
+    "tab.activeBorder": "#080808",
+    "breadcrumb.background": "#080808",
+    "statusBar.background": "#080808",
+    "sideBar.border": "#080808",
+    "titleBar.border": "#080808",
+    "statusBar.border": "#080808",
+    "menu.border": "#080808",
+    "contrastBorder": "#080808",
+    "panel.border": "#080808",
+    "editorRuler.foreground": "#080808",
+    "tab.border": "#080808",
+    "tab.lastPinnedBorder": "#080808",
+    "activityBar.border": "#080808",
+    "editorGutter.background": "#080808",
+    "editor.lineHighlightBackground": "#0c0c0c",
+    "editor.selectionBackground": "#111",
+    "editor.selectionHighlightBackground": "#111",
+    "titleBar.activeBackground": "#000",
+    "titleBar.activeForeground": "#aaa",
+    "list.hoverBackground": "#000",
+    "list.hoverForeground": "#aaa",
+    "list.activeSelectionBackground": "#000",
+    "list.activeSelectionForeground": "#aaa",
+    "list.inactiveSelectionBackground": "#000",
+    "sideBarTitle.foreground": "#aaa",
+    "sideBarSectionHeader.foreground": "#aaa",
+    "sideBarSectionHeader.background": "#000",
+    "editorIndentGuide.activeBackground": "#111",
+    "editorIndentGuide.background": "#111"
+  },
+  "terminal.integrated.gpuAcceleration": "off",
+  "workbench.startupEditor": "none",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Bearded Theme Black & Ruby",
+  "editor.tabSize": 3,
+  "editor.detectIndentation": false,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "key": "ctrl+shift+i",
+  "command": "editor.action.sourceAction",
+  "args": {
+    "kind": "source.addMissingImports",
+    "apply": "first"
+},
+"editor.wordWrap": "on"
+}
