@@ -1,0 +1,10 @@
+{
+  //eslint
+  // this probably should be a workspace setting;
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ]
+}
