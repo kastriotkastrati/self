@@ -4,21 +4,24 @@
 flavor=$1
 
 
-function shared_commands() {
+function shared_start_commands() {
   cd ~/coding/nydogeexchange
 }
 
+
 function run_server(){
-  shared_commands
+  shared_start_commands
   source venv/nodevenv/bin/activate
   cd server
+  code .
   npm run dev
 }
 
 function run_client(){
-  shared_commands
+  shared_start_commands
   source venv/nextvenv/bin/activate
   cd client
+  code .
   npm run dev
 } 
 
