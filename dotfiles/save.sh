@@ -1,6 +1,6 @@
 
 run_save(){
-  parsed_date=$date+"%d, %B, %y, %HH:mm"
+  parsed_date=date +"%d %B, %y, %H:%m"
   cd ~/coding/self
   git add "./dotfiles"
   git commit -m "dotfiles: $parsed_date"
