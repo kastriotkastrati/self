@@ -107,3 +107,4 @@ source ~/.nvm/nvm.sh
 alias python='python3'
 alias pip='pip3'
 alias doge=". ~/coding/self/terminal/bash/doge.sh" 
+alias save-dotfiles="~/coding/self/dotfiles/save.sh"
