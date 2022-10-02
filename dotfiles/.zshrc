@@ -103,10 +103,16 @@ source $ZSH/oh-my-zsh.sh
 
 # mine
 
-export PATH=~/boxes/brew/bin:$PATH
-
+export PATH=~/boxes/brew/bin:$PATH 
 source ~/.nvm/nvm.sh
+
+alias brewer='sudo -Hu kastriot-dflow brew'
+
 alias python='python3'
 alias pip='pip3'
+
+alias rm="rm -i -v"
+alias :quit="exit"
+
 alias doge=". ~/coding/self/terminal/bash/doge.sh" 
 alias save-dotfiles="~/coding/self/dotfiles/save.sh"
