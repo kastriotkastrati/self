@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$msg=$1
+$msg=$@
 
 run_save(){
   parsed_date=$(date +"%a, %d %B, %y, %H:%m")
