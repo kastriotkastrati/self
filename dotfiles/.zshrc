@@ -114,8 +114,8 @@ alias rm="rm -i -v"
 alias :quit="exit"
 
 alias doge=". ~/coding/self/terminal/bash/doge.sh" 
-alias save-dotfiles="~/coding/self/dotfiles/save.sh"
-alias save-self="~/coding/self/self-save.sh"
+alias save-dotfiles="~/coding/self/dotfiles/save-dotfiles.sh"
+alias save-self="~/coding/self/save-self.sh"
 
 
 
