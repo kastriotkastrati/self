@@ -1,0 +1,111 @@
+{
+  "editor.fontSize": 17,
+  "workbench.activityBar.visible": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.tabSize": 2,
+  "workbench.colorCustomizations": {
+    "editor.background": "#1a1c1e",
+    "editor.inactiveSelectionBackground": "#000",
+    "editor.lineHighlightBackground": "#0c0c0c",
+    "editor.selectionBackground": "#000",
+    "editor.selectionHighlightBackground": "#0F0F0F",
+    "editorIndentGuide.activeBackground": "#222",
+    "editorIndentGuide.background": "#222",
+    "editorRuler.foreground": "#1a1c1e",
+    "editorGroupHeader.tabsBackground": "#1a1c1e",
+    "editorGutter.background": "#1a1c1e",
+
+    "sideBar.background": "#1a1c1e",
+    "sideBar.border": "#000",
+    "sideBarSectionHeader.border": "#1a1c1e",
+    "sideBarSectionHeader.foreground": "#aaa",
+    "sideBarSectionHeader.background": "#1a1c1e",
+    "sideBarTitle.foreground": "#aaa",
+    
+    "tab.inactiveBackground": "#1a1c1e",
+    "tab.activeBackground": "#020202",
+    "tab.border": "#1a1c1e",
+    "tab.lastPinnedBorder": "#1a1c1e",
+    "tab.activeBorder": "#1a1c1e",
+
+    "titleBar.activeBackground": "#000",
+    "titleBar.activeForeground": "#aaa",
+    "titleBar.border": "#1a1c1e",
+    
+    "list.hoverBackground": "#000",
+    "list.hoverForeground": "#aaa",
+    "list.activeSelectionBackground": "#000",
+    "list.activeSelectionForeground": "#aaa",
+    "list.inactiveSelectionBackground": "#000",
+
+    "panel.background": "#1a1c1e",
+    "panel.border": "#1a1c1e",
+
+    "statusBar.background": "#1a1c1e",
+    "statusBar.border": "#1a1c1e",
+
+    "activityBar.background": "#1a1c1e",
+    "activityBar.border": "#1a1c1e",
+
+    "menu.border": "#1a1c1e",
+    "contrastBorder": "#1a1c1e",
+    "breadcrumb.background": "#1a1c1e",
+
+  },
+  // vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "workbench.iconTheme": "file-icons",
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid"
+}
