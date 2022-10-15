@@ -104,6 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # mine
 
 export PATH=~/boxes/brew/bin:$PATH 
+export PATH=~/.local/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 source ~/.nvm/nvm.sh
 
 
