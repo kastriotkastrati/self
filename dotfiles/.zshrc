@@ -118,8 +118,9 @@ alias rm="rm -i -v"
 alias :quit="exit"
 
 alias doge=". ~/coding/self/coding/nydogeexchange.sh" 
-alias save-dotfiles="~/coding/self/dotfiles/save-dotfiles.sh"
-alias save-self="~/coding/self/save-self.sh"
+alias save-dotfiles=". ~/coding/self/dotfiles/save-dotfiles.sh"
+alias save-self=". ~/coding/self/save-self.sh"
+alias add-desktop=". ~/coding/self/Kastriots-Air/scripts/add-desktop.sh"
 
 
 
