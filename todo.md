@@ -17,3 +17,4 @@ Oct 22, 2022.
 
 + Learn rust
 + Do a leetcode problem
++ Study
