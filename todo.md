@@ -15,6 +15,12 @@ the day ends
 
 Oct 22, 2022.
 
+[x] Learn rust
+[x] Do a leetcode problem
+[x] Study
+
+Oct 23, 2022.
 [] Learn rust
 [] Do a leetcode problem
 [] Study
+
