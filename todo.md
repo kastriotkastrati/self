@@ -26,7 +26,18 @@ Oct 23, 2022.
 
 
 Oct 24, 2022.
-[] Learn rust
-[] Do a leetcode problem
-[] Study
+[x] Learn rust
+[x] Do a leetcode problem
+[x] Study
+
+Oct 25, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[x] Study
+
+Oct 26, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[x] Study
+
 
