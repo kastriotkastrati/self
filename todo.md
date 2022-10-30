@@ -62,3 +62,9 @@ Oct 29, 2022.
 [x] Study
 
 
+Oct 30, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[x] Study
+
+
