@@ -86,3 +86,10 @@ Nov 2, 2022.
 [x] Study
 
 
+Nov 3, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[-] Study
+
+
+
