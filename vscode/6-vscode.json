@@ -1,0 +1,122 @@
+{
+  "editor.fontSize": 21,
+  "workbench.activityBar.visible": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Gruvbox ish Dark Hard",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.tabSize": 2,
+  "workbench.colorCustomizations": {
+
+    "editor.background": "#0a0f14",
+    "editor.inactiveSelectionBackground": "#2E3339",
+    "editor.lineHighlightBackground": "#0a0f14",
+    "editor.selectionBackground": "#2E3339",
+    "editor.selectionHighlightBackground": "#0F0F0F",
+    "editorIndentGuide.activeBackground": "#222",
+    "editorIndentGuide.background": "#222",
+    "editorRuler.foreground": "#0a0f14",
+    "editorGroupHeader.tabsBackground": "#0a0f14",
+    "editorGutter.background": "#0a0f14",
+    "editorLineNumber.activeForeground": "#aaa",
+
+    "sideBar.background": "#0a0f14",
+    "sideBar.border": "#0a0f14",
+    "sideBarSectionHeader.border": "#0a0f14",
+    "sideBarSectionHeader.foreground": "#aaa",
+    "sideBarSectionHeader.background": "#0a0f14",
+    "sideBarTitle.foreground": "#aaa",
+    
+    "tab.inactiveBackground": "#0a0f14",
+    "tab.activeBackground": "#020202",
+    "tab.border": "#0a0f14",
+    "tab.lastPinnedBorder": "#0a0f14",
+    "tab.activeBorder": "#0a0f14",
+
+    "titleBar.activeBackground": "#0a0f14",
+    "titleBar.inactiveBackground": "#0a0f14",
+    "titleBar.activeForeground": "#aaa",
+    "titleBar.border": "#0a0f14",
+    
+    "list.hoverBackground": "#2E3339",
+    "list.hoverForeground": "#aaa",
+    "list.activeSelectionBackground": "#2E3339",
+    "list.activeSelectionForeground": "#aaa",
+    "list.inactiveSelectionBackground": "#2E3339",
+
+    "panel.background": "#0a0f14",
+    "panel.border": "#0a0f14",
+
+    "statusBar.background": "#0a0f14",
+    "statusBar.border": "#0a0f14",
+
+    "activityBar.background": "#0a0f14",
+    "activityBar.border": "#0a0f14",
+
+    "menu.border": "#0a0f14",
+    "contrastBorder": "#0a0f14",
+    "breadcrumb.background": "#0a0f14",
+
+    "editorCursor.foreground": "#bbb"
+  },
+  // vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "workbench.iconTheme": "file-icons",
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "none",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "workbench.startupEditor": "none",
+  "editor.guides.indentation": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.colorDecorators": false
+}
