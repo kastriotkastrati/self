@@ -210,3 +210,33 @@ Nov 23, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [/] Study
+
+
+Nov 24, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[/] Study
+
+
+Nov 25, 2022.
+[x] Learn rust
+[/] Do a leetcode problem
+[/] Study
+
+
+Nov 26, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[/] Study
+
+
+Nov 27, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[/] Study
+
+
+Nov 28, 2022.
+[x] Learn rust
+[-] Do a leetcode problem
+[-] Study
