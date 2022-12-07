@@ -13,230 +13,285 @@ done / not-done are resolved after
 the day ends
 
 
-Oct 22, 2022.
+October 22, 2022.
 
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 23, 2022.
+October 23, 2022.
 [x] Learn rust
 [-] Do a leetcode problem
 [x] Study
 
 
-Oct 24, 2022.
+October 24, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 25, 2022.
+October 25, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 26, 2022.
+October 26, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 27, 2022.
+October 27, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 28, 2022.
+October 28, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 29, 2022.
+October 29, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 30, 2022.
+October 30, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Oct 31, 2022.
+October 31, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Nov 1, 2022.
+November 1, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Nov 2, 2022.
+November 2, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Nov 3, 2022.
+November 3, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [-] Study
 
 
-Nov 4, 2022.
+November 4, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [/] Study
 
 
-Nov 5, 2022.
+November 5, 2022.
 [-] Learn rust
 [-] Do a leetcode problem
 [-] Study
 
 
-Nov 6, 2022.
+November 6, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [-] Study
 
 
-Nov 7, 2022.
+November 7, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [-] Study
 
 
-Nov 8, 2022.
+November 8, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [-] Study
 
 
-Nov 9, 2022.
+November 9, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [-] Study
 
 
-Nov 10, 2022.
+November 10, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [-] Study
 
 
-Nov 11, 2022.
+November 11, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [-] Study
 
 
-Nov 12, 2022.
+November 12, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [-] Study
 
 
-Nov 13, 2022.
+November 13, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [x] Study
 
 
-Nov 14, 2022.
+November 14, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [-] Study
 
 
-Nov 15, 2022.
+November 15, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [-] Study
 
 
-Nov 16, 2022.
+November 16, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [-] Study
 
 
-Nov 17, 2022.
+November 17, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [-] Study
 
 
-Nov 18, 2022.
+November 18, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [-] Study
 
 
-Nov 19, 2022.
+November 19, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [/] Study
 
 
-Nov 20, 2022.
+November 20, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [/] Study
 
 
-Nov 21, 2022.
+November 21, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [/] Study
 
 
-Nov 22, 2022.
+November 22, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [/] Study
 
 
-Nov 23, 2022.
+November 23, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [/] Study
 
 
-Nov 24, 2022.
+November 24, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [/] Study
 
 
-Nov 25, 2022.
+November 25, 2022.
 [x] Learn rust
 [/] Do a leetcode problem
 [/] Study
 
 
-Nov 26, 2022.
+November 26, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [/] Study
 
 
-Nov 27, 2022.
+November 27, 2022.
 [x] Learn rust
 [x] Do a leetcode problem
 [/] Study
 
 
-Nov 28, 2022.
+November 28, 2022.
 [x] Learn rust
 [-] Do a leetcode problem
 [-] Study
+
+
+November 29, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[-] Study
+
+
+November 30, 2022.
+[x] Learn rust
+[x] Do a leetcode problem
+[/] Study
+
+
+December 1, 2022.
+[x] Learn rust
+[x] Do a leetcode* problem *(advent of code)
+[/] Study
+
+
+December 2, 2022.
+[x] Learn rust
+[x] Do a leetcode* problem *(advent of code)
+[-] Study
+
+
+December 3, 2022.
+[x] Learn rust
+[x] Do a leetcode* problem *(advent of code)
+[-] Study
+
+
+December 4, 2022.
+[x] Learn rust
+[/] Do a leetcode* problem *(advent of code)
+[-] Study
+
+
+December 5, 2022.
+[x] Learn rust
+[/] Do a leetcode* problem *(advent of code)
+[-] Study
+
+
+December 6, 2022.
+[x] Learn rust
+[/] Do a leetcode* problem *(advent of code)
+[-] Study
+
+
+December 7, 2022.
+[x] Learn rust
+[x] Do a leetcode* problem *(advent of code)
+[-] Study
+
