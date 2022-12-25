@@ -1,15 +1,10 @@
 This is a file that will contain
 all todo's for each day.
 
-Template:
-dd-mm-yy
+#Template:
+###MMMM dd, yy.
 
-[]**\_\_** done / not-done
-[]**\_\_** done / not-done
-[]**\_\_** done / not-done
-
-done / not-done are resolved after
-the day ends
+#Start
 
 October 22, 2022.
 [x] Do a leetcode problem
