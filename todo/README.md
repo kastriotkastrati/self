@@ -355,3 +355,13 @@ December 30, 2022.
 
 - [-] Do a leetcode problem
 - [x] Study - Capture the flag
+
+December 31, 2022.
+
+- [-] Do a leetcode problem
+- [x] Study - Capture the flag
+
+January 1, 2023.
+
+- [x] Do a leetcode problem
+- [x] Study - Capture the flag
