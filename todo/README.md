@@ -365,3 +365,8 @@ January 1, 2023.
 
 - [x] Do a leetcode problem
 - [x] Study - Capture the flag
+
+
+January 2, 2023.
+- [-] Do a leetcode problem
+- [x] Study - Capture the flag
