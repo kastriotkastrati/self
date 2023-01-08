@@ -380,3 +380,27 @@ January 3, 2023.
 January 4, 2023.
 - [x] Do a leetcode problem
 - [x] Study - Capture the flag
+
+
+Jaunary 5, 2023.
+- [/] Do a leetcode problem
+- [x] Study - Capture the flag
+
+
+Jaunary 6, 2023.
+- [x] Do a leetcode problem
+- [x] Study - Capture the flag
+
+
+Jaunary 7, 2023.
+- [x] Do a leetcode problem
+- [x] Study - Capture the flag
+
+
+Jaunary 8, 2023.
+- [x] Do a leetcode problem
+- [x] Study - Capture the flag
+
+
+
+
