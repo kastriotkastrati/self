@@ -436,3 +436,48 @@ Jaunary 15, 2023.
 - [-] Do a leetcode problem
 - [-] Study - Capture the flag
 
+
+Jaunary 16, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 17, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 18, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 19, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 20, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 21, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 22, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 23, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag
+
+
+Jaunary 24, 2023.
+- [x] Do a leetcode problem
+- [x] Study - Capture the flag
+
