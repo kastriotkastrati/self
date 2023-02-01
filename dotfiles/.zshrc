@@ -113,6 +113,8 @@ source ~/.nvm/nvm.sh
 
 alias python='python3'
 alias pip='pip3'
+alias docker='podman'
+alias docker-compose='podman-compose'
 
 alias rm="rm -i -v"
 alias :quit="exit"
