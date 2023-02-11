@@ -113,8 +113,19 @@ source ~/.nvm/nvm.sh
 
 alias python='python3'
 alias pip='pip3'
-alias docker='podman'
 alias docker-compose='podman-compose'
+
+# docker alias 
+docker() {
+    if [ "$1" = "compose" ]; then
+        shift
+        podman-compose "$@"
+    else 
+        command podman "$@"
+    fi
+}
+
+
 
 alias rm="rm -i -v"
 alias :quit="exit"
