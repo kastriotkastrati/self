@@ -705,3 +705,9 @@ March 9, 2023.
 March 10, 2023.
 - [-] Do a leetcode problem
 - [-] Study - Capture the flag or Docker Images
+
+
+March 11, 2023.
+- [x] Do a leetcode problem
+- [x] Study - Capture the flag or Docker Images
+- [x] Leetcode-d for the previous non-leetcode days
