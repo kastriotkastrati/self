@@ -2,7 +2,6 @@ Things to study:
 
 - Neural Networks.
 - CTF-s.
-- Cool data structures with unique pros / cons
 
 Books:
 
