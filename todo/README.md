@@ -851,3 +851,13 @@ April 7, 2023.
 April 8, 2023.
 - [x] Do a leetcode problem
 - [x] Study - Capture the flag or Docker Images
+
+
+April 9, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 10, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Capture Vuln Docker Images
