@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="sonicradish"
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="edvardm"
+ZSH_THEME="fwalch"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -132,11 +132,8 @@ docker() {
 alias rm="rm -i -v"
 alias :quit="exit"
 
-alias doge=". ~/coding/self/coding/nydogeexchange.sh" 
+alias project-nyde=". ~/coding/self/coding/nydogeexchange.sh" 
 alias save-dotfiles=". ~/coding/self/dotfiles/save-dotfiles.sh"
 alias save-self=". ~/coding/self/save-self.sh"
 alias add-desktop=". ~/coding/self/Kastriots-Air/scripts/add-desktop.sh"
-
-
-
 

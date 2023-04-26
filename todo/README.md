@@ -861,3 +861,108 @@ April 9, 2023.
 April 10, 2023.
 - [-] Do a leetcode problem
 - [-] Study - Capture the flag or Capture Vuln Docker Images
+
+
+April 11, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 12, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 13, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 14, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 15, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 16, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 17, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 18, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 19, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 20, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 21, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 22, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 23, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 24, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 25, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 26, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 27, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 28, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 29, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+April 30, 2023.
+- [-] Do a leetcode problem
+- [-] Study - Capture the flag or Docker Images
+
+
+May 1, 2023.
+- [x] Do a leetcode problem
+- [-] Study

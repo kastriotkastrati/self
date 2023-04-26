@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 
 flavor=$1
@@ -25,13 +25,6 @@ function run_client(){
   npm run dev
 } 
 
-function run_flask() {
-  shared_start_commands
-  source venv/pyvenv/bin/activate
-  cd processing
-  code .
-  flask run
-}
 
 function not_found(){
   echo "
@@ -39,7 +32,6 @@ function not_found(){
     Possible flavors are:
     1. srv -> launches nydogeexchange server
     2. client -> launches nydogeexchange client
-    3. flask -> launches flask processor
   "
 }
 
@@ -53,15 +45,9 @@ case $flavor in
   run_client
   ;;
 
-  "flask")
-  run_flask
-  ;;
-
   *)
   not_found
   ;;
 
 esac
-
-
 
