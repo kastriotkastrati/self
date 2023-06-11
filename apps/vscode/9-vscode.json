@@ -1,0 +1,135 @@
+{
+    "editor.fontSize": 17,
+    "workbench.activityBar.visible": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorCustomizations": {
+        "editor.background": "#101418",
+        "editor.inactiveSelectionBackground": "#2E3339",
+        "editor.lineHighlightBackground": "#101418",
+        "editor.selectionBackground": "#2E3339",
+        "editor.selectionHighlightBackground": "#0F0F0F",
+        "editorIndentGuide.activeBackground": "#222",
+        "editorIndentGuide.background": "#222",
+        "editorRuler.foreground": "#101418",
+        "editorGroupHeader.tabsBackground": "#101418",
+        "editorGutter.background": "#222",
+        "editorLineNumber.activeForeground": "#aaa",
+        "sideBar.background": "#101418",
+        "sideBar.border": "#101418",
+        "sideBarSectionHeader.border": "#101418",
+        "sideBarSectionHeader.foreground": "#aaa",
+        "sideBarSectionHeader.background": "#101418",
+        "sideBarTitle.foreground": "#aaa",
+        "tab.inactiveBackground": "#101418",
+        "tab.activeBackground": "#020202",
+        "tab.border": "#101418",
+        "tab.lastPinnedBorder": "#101418",
+        "tab.activeBorder": "#101418",
+        "titleBar.activeBackground": "#101418",
+        "titleBar.inactiveBackground": "#101418",
+        "titleBar.activeForeground": "#aaa",
+        "titleBar.border": "#101418",
+        "list.hoverBackground": "#2E3339",
+        "list.hoverForeground": "#aaa",
+        "list.activeSelectionBackground": "#2E3339",
+        "list.activeSelectionForeground": "#aaa",
+        "list.inactiveSelectionBackground": "#2E3339",
+        "panel.background": "#101418",
+        "panel.border": "#101418",
+        "statusBar.background": "#101418",
+        "statusBar.border": "#101418",
+        "activityBar.background": "#101418",
+        "activityBar.border": "#101418",
+        "menu.border": "#101418",
+        "contrastBorder": "#101418",
+        "breadcrumb.background": "#101418",
+        "editorCursor.foreground": "#bbb"
+    },
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "workbench.iconTheme": "file-icons",
+    "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "solid",
+    "editor.renderWhitespace": "none",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "workbench.startupEditor": "none",
+    "editor.guides.indentation": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.colorDecorators": false,
+    "window.zoomLevel": 1,
+    "python.formatting.provider": "black",
+    "workbench.sideBar.location": "right",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Menlo, Monoid, Monaco, 'Courier New', monospace",
+    "rust-analyzer.lens.implementations.enable": false,
+    "editor.inlineSuggest.enabled": true,
+    "dev.containers.dockerComposePath": "docker compose",
+    "dev.containers.dockerPath": "podman",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": false
+    },
+    "editor.detectIndentation": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "dev.containers.defaultExtensions": [
+        "Github.copilot"
+    ],
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.colorTheme": "The Better From GitHub Theme"
+}
