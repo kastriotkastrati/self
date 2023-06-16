@@ -1182,3 +1182,13 @@ June 12, 2023.
 June 13, 2023.
 - [x] Do a leetcode problem
 - [-] Study
+
+
+June 14, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 15, 2023.
+- [-] Do a leetcode problem
+- [-] Study
