@@ -1192,3 +1192,62 @@ June 14, 2023.
 June 15, 2023.
 - [-] Do a leetcode problem
 - [-] Study
+
+
+June 16, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 17, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 18, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 19, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 20, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 21, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 23, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 24, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+June 25, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+June 26, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+June 27, 2023.
+- [x] Do a leetcode problem
+- [-] Study
