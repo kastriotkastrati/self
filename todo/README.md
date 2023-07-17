@@ -1341,3 +1341,8 @@ July 14, 2023.
 July 15, 2023.
 - [-] Do a leetcode problem
 - [-] Study
+
+
+July 16, 2023.
+- [-] Do a leetcode problem
+- [-] Study
