@@ -1401,3 +1401,43 @@ July 26, 2023.
 July 27, 2023.
 - [x] Do a leetcode problem
 - [-] Study
+
+
+July 28, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+July 29, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+July 30, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+July 31, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+August 1, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+August 2, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+August 3, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+August 4, 2023.
+- [x] Do a leetcode problem
+- [-] Study
