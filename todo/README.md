@@ -1471,3 +1471,33 @@ August 9, 2023.
 August 10, 2023.
 - [x] Do a leetcode problem
 - [-] Study
+
+
+August 11, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+August 12, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+August 13, 2023.
+- [x] Do a leetcode problem
+- [-] Study
+
+
+August 14, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+August 15, 2023.
+- [-] Do a leetcode problem
+- [-] Study
+
+
+August 16, 2023.
+- [-] Do a leetcode problem
+- [-] Study
