@@ -1,0 +1,96 @@
+{
+  "editor.fontSize": 18,
+  "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    "editor.background": "#171717",
+    "editor.inactiveSelectionBackground": "#2E3339",
+    "editor.lineHighlightBackground": "#171717",
+    "editor.selectionBackground": "#2E3339",
+    "editor.selectionHighlightBackground": "#0F0F0F",
+    "editorIndentGuide.activeBackground1": "#222",
+    "editorIndentGuide.background1": "#222",
+    "editorRuler.foreground": "#171717",
+    "editorGroupHeader.tabsBackground": "#171717",
+    "editorGutter.background": "#222",
+    "editorLineNumber.activeForeground": "#aaa",
+    "sideBar.background": "#171717",
+    "sideBar.border": "#171717",
+    "sideBarSectionHeader.border": "#171717",
+    "sideBarSectionHeader.foreground": "#aaa",
+    "sideBarSectionHeader.background": "#171717",
+    "sideBarTitle.foreground": "#aaa",
+    "tab.inactiveBackground": "#171717",
+    "tab.activeBackground": "#020202",
+    "tab.border": "#171717",
+    "tab.lastPinnedBorder": "#171717",
+    "tab.activeBorder": "#171717",
+    "titleBar.activeBackground": "#171717",
+    "titleBar.inactiveBackground": "#171717",
+    "titleBar.activeForeground": "#aaa",
+    "titleBar.border": "#171717",
+    "list.hoverBackground": "#2E3339",
+    "list.hoverForeground": "#aaa",
+    "list.activeSelectionBackground": "#2E3339",
+    "list.activeSelectionForeground": "#aaa",
+    "list.inactiveSelectionBackground": "#2E3339",
+    "panel.background": "#171717",
+    "panel.border": "#171717",
+    "statusBar.background": "#171717",
+    "statusBar.border": "#171717",
+    "activityBar.background": "#171717",
+    "activityBar.border": "#171717",
+    "menu.border": "#171717",
+    "contrastBorder": "#171717",
+    "breadcrumb.background": "#171717",
+    "editorCursor.foreground": "#bbb"
+  },
+  "workbench.iconTheme": "file-icons",
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "none",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "workbench.startupEditor": "none",
+  "editor.guides.indentation": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.colorDecorators": false,
+  "workbench.sideBar.location": "right",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.wordWrap": "on",
+  "editor.inlineSuggest.enabled": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "workbench.colorTheme": "DuoTone Dark Faithful Earth",
+  "editor.fontFamily": "'Jetbrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.detectIndentation": false,
+  "window.commandCenter": false
+}
