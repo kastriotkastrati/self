@@ -1,0 +1,130 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.background": "#0a0c10",
+    "editor.inactiveSelectionBackground": "#2E3339aa",
+    "editor.lineHighlightBackground": "#0a0c10",
+    "editor.selectionBackground": "#2E3339",
+    "editor.selectionHighlightBackground": "#ffffff00",
+
+    "editorIndentGuide.activeBackground1": "#0c0f15",
+    "editorIndentGuide.background1": "#0c0f15",
+
+    "sideBar.background": "#0a0c10",
+    "sideBar.border": "#0a0c10",
+    "sideBarSectionHeader.border": "#0a0c10",
+    "sideBarSectionHeader.foreground": "#aaa",
+    "sideBarSectionHeader.background": "#0a0c10",
+    "sideBarTitle.foreground": "#aaa",
+
+    "tab.inactiveBackground": "#0a0c10",
+    "tab.activeBackground": "#020202",
+    "tab.border": "#0a0c10",
+    "tab.lastPinnedBorder": "#0a0c10",
+    "tab.activeBorder": "#0a0c10",
+
+    "titleBar.activeBackground": "#0a0c10",
+    "titleBar.inactiveBackground": "#0a0c10",
+    "titleBar.activeForeground": "#aaa",
+    "titleBar.border": "#0a0c10",
+
+    "list.hoverBackground": "#2E3339",
+    "list.hoverForeground": "#aaa",
+    "list.activeSelectionBackground": "#2E3339",
+    "list.activeSelectionForeground": "#aaa",
+    "list.inactiveSelectionBackground": "#2E3339",
+
+    "panel.background": "#0a0c10",
+    "panel.border": "#0a0c10",
+
+    "statusBar.background": "#0a0c10",
+    "statusBar.border": "#0a0c10",
+    "activityBar.background": "#0a0c10",
+    "activityBar.border": "#0a0c10",
+
+    "editorGroupHeader.tabsBackground": "#0a0c10",
+    "editorRuler.foreground": "#0a0c10",
+    "editorGutter.background": "#0a0c10",
+    "editorLineNumber.activeForeground": "#aaa",
+
+    "menu.border": "#0a0c10",
+    "contrastBorder": "#0a0c10",
+    "breadcrumb.background": "#0a0c10",
+    "editorCursor.foreground": "#bbb",
+    "scrollbar.shadow": "#ffffff00"
+  },
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": "j", "after": "gj" },
+    { "before": "k", "after": "gk" },
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    { "before": ["<leader>", "a"], "commands": ["workbench.view.explorer"] },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-p>": false
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.fontSize": 19,
+  "editor.fontFamily": "monospace, 'Jetbrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.detectIndentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.glyphMargin": false,
+  "editor.snippets.codeActions.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "none",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.smoothScrolling": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.wordWrap": "on",
+  "editor.inlineSuggest.enabled": true,
+  "editor.colorDecorators": false,
+  "editor.formatOnSave": true,
+
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "github-icons-for-vscode",
+  "workbench.startupEditor": "none",
+
+  "gitlens.codeLens.enabled": false,
+  "breadcrumbs.enabled": false,
+
+  "find-it-faster.general.useTerminalInEditor": true
+}
