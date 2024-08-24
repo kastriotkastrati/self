@@ -1,0 +1,7 @@
+remove Control = Control_L
+remove Mod4 = Super_L
+keycode 37 = Super_L
+keycode 133 = Control_L
+add Control = Control_L
+add Mod4 = Super_L
+
