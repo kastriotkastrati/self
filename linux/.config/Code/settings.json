@@ -88,12 +88,20 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
   "editor.fontSize": 19,
-  "editor.fontFamily": "monospace, 'Jetbrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Meslo LG S', monospace, 'Jetbrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.detectIndentation": false,
   "editor.renderLineHighlight": "none",
   "editor.glyphMargin": false,
@@ -113,18 +121,25 @@
   "editor.inlineSuggest.enabled": true,
   "editor.colorDecorators": false,
   "editor.formatOnSave": true,
+  "editor.lightbulb.enabled": "off",
+  "editor.suggest.insertMOde": "replace",
 
   "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
-
-  "workbench.colorTheme": "GitHub Dark Dimmed",
   "workbench.activityBar.location": "hidden",
   "workbench.sideBar.location": "right",
-  "workbench.iconTheme": "github-icons-for-vscode",
   "workbench.startupEditor": "none",
+  "workbench.iconTheme": "city-lights-icons-vsc",
+  "workbench.colorTheme": "minimalGreen",
+
+  "rust-analyzer.lens.debug.enable": false,
+  "rust-analyzer.lens.implementations.enable": false,
+  "rust-analyzer.lens.run.enable": false,
+  "rust-analyzer.lens.enable": false,
 
   "gitlens.codeLens.enabled": false,
   "breadcrumbs.enabled": false,
 
-  "find-it-faster.general.useTerminalInEditor": true
+  "find-it-faster.general.useTerminalInEditor": true,
+  "javascript.preferences.importModuleSpecifier": "non-relative"
 }
