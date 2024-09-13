@@ -1,12 +1,13 @@
 [theme]
 [theme.overrides]
-separator = "  "
-idle_bg="#0a0c10"
-info_bg="#0a0c10"
-good_bg="#0a0c10"
-warning_bg="#0a0c10"
-critical_bg="#0a0c10"
-separator_bg="#0a0c10"
+separator = "|"
+idle_bg="#0a0b0e"
+info_bg="#0a0b0e"
+good_bg="#0a0b0e"
+warning_bg="#0a0b0e"
+critical_bg="#0a0b0e"
+separator_fg="#2a2b2e"
+separator_bg="#0a0b0e"
 
 [[block]]
 block = "temperature"

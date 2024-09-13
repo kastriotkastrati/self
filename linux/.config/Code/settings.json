@@ -1,31 +1,45 @@
 {
   "workbench.colorCustomizations": {
-    "editor.background": "#0a0c10",
+    "editor.background": "#0a0b0e",
     "editor.inactiveSelectionBackground": "#2E3339aa",
-    "editor.lineHighlightBackground": "#0a0c10",
+    "editor.lineHighlightBackground": "#0a0b0e",
     "editor.selectionBackground": "#2E3339",
     "editor.selectionHighlightBackground": "#ffffff00",
 
     "editorIndentGuide.activeBackground1": "#0c0f15",
     "editorIndentGuide.background1": "#0c0f15",
 
-    "sideBar.background": "#0a0c10",
-    "sideBar.border": "#0a0c10",
-    "sideBarSectionHeader.border": "#0a0c10",
+    "gitDecoration.modifiedResourceForeground": "#9b87fd",
+    "gitDecoration.addedResourceForgeround": "#99C794",
+    "gitDecoration.deletedResourceForeground": "#6c6783",
+    "gitDecoration.untrackedResourceForeground": "#99C794",
+    "gitDecoration.conflictingResourceForeground": "#E15A60",
+    "gitDecoration.ignoredResourceForeground": "#6c6783",
+
+    "pickerGroup.border": "#0d0e11",
+    "pickerGroup.foreground": "#999",
+    "quickInput.background": "#0d0e11",
+    "quickInput.foreground": "#999",
+    "quickInputList.focusBackground": "#161719",
+    "quickInputList.focusForeground": "#999",
+
+    "sideBar.background": "#0a0b0e",
+    "sideBar.border": "#0a0b0e",
+    "sideBarSectionHeader.border": "#0a0b0e",
     "sideBarSectionHeader.foreground": "#aaa",
-    "sideBarSectionHeader.background": "#0a0c10",
+    "sideBarSectionHeader.background": "#0a0b0e",
     "sideBarTitle.foreground": "#aaa",
 
-    "tab.inactiveBackground": "#0a0c10",
+    "tab.inactiveBackground": "#0a0b0e",
     "tab.activeBackground": "#020202",
-    "tab.border": "#0a0c10",
-    "tab.lastPinnedBorder": "#0a0c10",
-    "tab.activeBorder": "#0a0c10",
+    "tab.border": "#0a0b0e",
+    "tab.lastPinnedBorder": "#0a0b0e",
+    "tab.activeBorder": "#0a0b0e",
 
-    "titleBar.activeBackground": "#0a0c10",
-    "titleBar.inactiveBackground": "#0a0c10",
+    "titleBar.activeBackground": "#0a0b0e",
+    "titleBar.inactiveBackground": "#0a0b0e",
     "titleBar.activeForeground": "#aaa",
-    "titleBar.border": "#0a0c10",
+    "titleBar.border": "#0a0b0e",
 
     "list.hoverBackground": "#2E3339",
     "list.hoverForeground": "#aaa",
@@ -33,22 +47,22 @@
     "list.activeSelectionForeground": "#aaa",
     "list.inactiveSelectionBackground": "#2E3339",
 
-    "panel.background": "#0a0c10",
-    "panel.border": "#0a0c10",
+    "panel.background": "#0a0b0e",
+    "panel.border": "#0a0b0e",
 
-    "statusBar.background": "#0a0c10",
-    "statusBar.border": "#0a0c10",
-    "activityBar.background": "#0a0c10",
-    "activityBar.border": "#0a0c10",
+    "statusBar.background": "#0a0b0e",
+    "statusBar.border": "#0a0b0e",
+    "activityBar.background": "#0a0b0e",
+    "activityBar.border": "#0a0b0e",
 
-    "editorGroupHeader.tabsBackground": "#0a0c10",
-    "editorRuler.foreground": "#0a0c10",
-    "editorGutter.background": "#0a0c10",
+    "editorGroupHeader.tabsBackground": "#0a0b0e",
+    "editorRuler.foreground": "#0a0b0e",
+    "editorGutter.background": "#0a0b0e",
     "editorLineNumber.activeForeground": "#aaa",
 
-    "menu.border": "#0a0c10",
-    "contrastBorder": "#0a0c10",
-    "breadcrumb.background": "#0a0c10",
+    "menu.border": "#0a0b0e",
+    "contrastBorder": "#0a0b0e",
+    "breadcrumb.background": "#0a0b0e",
     "editorCursor.foreground": "#bbb",
     "scrollbar.shadow": "#ffffff00"
   },
@@ -74,6 +88,16 @@
     {
       "before": ["K"],
       "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.nextInFiles"],
+      "silent": true
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prevInFiles"],
       "silent": true
     }
   ],
@@ -101,7 +125,7 @@
   },
 
   "editor.fontSize": 19,
-  "editor.fontFamily": "'Meslo LG S', monospace, 'Jetbrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Jetbrains Mono', 'Meslo LG S', monospace, Menlo",
   "editor.detectIndentation": false,
   "editor.renderLineHighlight": "none",
   "editor.glyphMargin": false,
@@ -122,7 +146,7 @@
   "editor.colorDecorators": false,
   "editor.formatOnSave": true,
   "editor.lightbulb.enabled": "off",
-  "editor.suggest.insertMOde": "replace",
+  "editor.suggest.insertMode": "replace",
 
   "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
@@ -130,7 +154,7 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "city-lights-icons-vsc",
-  "workbench.colorTheme": "minimalGreen",
+  "workbench.colorTheme": "Covert Slate Dark Theme",
 
   "rust-analyzer.lens.debug.enable": false,
   "rust-analyzer.lens.implementations.enable": false,
@@ -141,5 +165,6 @@
   "breadcrumbs.enabled": false,
 
   "find-it-faster.general.useTerminalInEditor": true,
-  "javascript.preferences.importModuleSpecifier": "non-relative"
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "scm.diffDecorations": "overview"
 }
