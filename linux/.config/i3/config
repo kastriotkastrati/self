@@ -63,7 +63,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 # Note: *1
-bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0e' --sb '#2a2b2e' --font 'Poppins Medium'
+bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Poppins Medium'
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -75,7 +75,7 @@ bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0e' --sb '#2a2b2e' 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
-bindsym $mod+l focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -198,13 +198,13 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	font pango:DejaVu Sans Mono Bold 10
         status_command i3status-rs ~/.config/i3status-rust/config.toml
-	position top
 	tray_output none
 	colors {
-		background #0a0b0e
-		focused_workspace #2a2b2e #2a2b2e #ffffff
-		inactive_workspace #0a0b0e #0a0b0e #ffffff
+		background #0a0b0c
+		focused_workspace #3a3b3c #3a3b3c #ffffff
+		inactive_workspace #0a0b0c #0a0b0c #ffffff
 	}	
 }
 
@@ -216,6 +216,7 @@ bindsym $mod+n bar mode dock
 bindsym $mod+m bar mode invisible
 bindsym $mod+SHIFT+s exec $HOME/.config/i3/take_screenshot.sh
 exec --no-startup-id "xmodmap $HOME/.Xmodmap"
+exec --no-startup-id $HOME/.config/i3/caps-lock-delay-fix.sh
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id $HOME/.nix-profile/bin/dunst
 exec --no-startup-id "feh --bg-scale /home/kastriotkastrati/data/wallpaper.jpg"
