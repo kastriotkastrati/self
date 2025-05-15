@@ -4,20 +4,27 @@ import = ["~/.config/alacritty/gruber.toml"]
 history = 10000
 
 [font]
-normal = { family = "Jetbrains Mono", style = "Regular" }
+normal = { family = "Agave", style = "Regular" }
+#normal = { family = "Monoid", style = "Regular" }
 #normal = { family = "Meslo LG S", style = "Regular" }
-#bold = { style = "Regular" }
-size = 18
-offset = { y = -4 }
+#normal = { family = "Jetbrains Mono", style = "Regular" }
 
+#bold = { style = "Regular" }
+
+#size = 20
+#size = 15
+size = 18
+
+#offset = { y = -4 }
+#offset = { y = -4 }
+offset = { y = 0 }
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
-opacity=0.95
-dynamic_title=false
-
+opacity = 0.95
+dynamic_title = false
 
 [window.padding]
 x = 15

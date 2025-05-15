@@ -1,13 +1,25 @@
 [theme]
 [theme.overrides]
 separator = "|"
-idle_bg="#0a0b0e"
-info_bg="#0a0b0e"
-good_bg="#0a0b0e"
-warning_bg="#0a0b0e"
 separator_bg="#0a0b0e"
-separator_fg="#2a2b2e"
-critical_bg="#0a0b0e"
+separator_fg="#1a1b1cbb"
+
+idle_bg="#0a0b0c"
+idle_fg="#5a5b5c"
+
+info_bg="#0a0b0c"
+info_fg="#5a5b5c"
+
+good_bg="#0a0b0c"
+warning_bg="#0a0b0c"
+
+critical_bg="#0a0b0c"
+
+[[block]]
+block = "net"
+interval = 30
+format = " $ip "
+
 
 [[block]]
 block = "temperature"
@@ -23,7 +35,7 @@ inactive_format = "DOWN"
 [[block]]
 block = "battery"
 interval = 10
-format = "    BAT $percentage    "
+format = " BAT $percentage "
 not_charging_format = " BAT $percentage "
 missing_format = " BAT $percentage "
 full_format = " BAT $percentage "
@@ -38,4 +50,4 @@ cmd = "pavucontrol"
 [[block]]
 block = "time"
 interval = 5
-format = " $timestamp.datetime(f:'%a %d %B        %-I:%M %p') "
+format = " $timestamp.datetime(f:'%a %e %B        %-I:%M %p') "
