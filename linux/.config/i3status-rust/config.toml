@@ -1,6 +1,6 @@
 [theme]
 [theme.overrides]
-separator = "|"
+separator = " > "
 separator_bg="#0a0b0e"
 separator_fg="#1a1b1cbb"
 
@@ -17,32 +17,32 @@ critical_bg="#0a0b0c"
 
 [[block]]
 block = "net"
-interval = 30
-format = " $ip "
+interval = 1000
+format = "$ip"
 
 
 [[block]]
 block = "temperature"
 interval = 30
-format = " TMP $average "
+format = "TMP $average"
 
 [[block]]
 block = "net"
 interval = 10
-format = " {WIFI $ssid|DEVICE $device} "
+format = "{$ssid|$device}"
 inactive_format = "DOWN"
 
 [[block]]
 block = "battery"
 interval = 10
 format = " BAT $percentage "
-not_charging_format = " BAT $percentage "
-missing_format = " BAT $percentage "
-full_format = " BAT $percentage "
+not_charging_format = "BAT $percentage"
+missing_format = "BAT $percentage"
+full_format = "BAT $percentage"
 
 [[block]]
 block = "sound"
-format = " VOL $volume.eng(w:2) "
+format = "VOL $volume.eng(w:2)"
 [[block.click]]
 button = "left"
 cmd = "pavucontrol"
@@ -50,4 +50,4 @@ cmd = "pavucontrol"
 [[block]]
 block = "time"
 interval = 5
-format = " $timestamp.datetime(f:'%a %e %B        %-I:%M %p') "
+format = "$timestamp.datetime(f:'%a %e %B        %-I:%M %p')"

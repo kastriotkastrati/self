@@ -40,7 +40,7 @@ ZSH_THEME="fwalch"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -107,21 +107,12 @@ source $ZSH/oh-my-zsh.sh
 
 
 . ~/data/.shell-variables
+. ~/.config/.zshrc-private
 
 export PIPENV_VENV_IN_PROJECT=1
 
 eval "$(zoxide init zsh)"
-alias python='python3'
-alias pip='pip3'
-alias docker-compose='podman-compose'
-alias cd='z'
-alias copy='xclip -sel clip'
-alias connect-airpods='bluetoothctl connect $AIRPODS_MAC_ADDRESS'
-alias connect-headphones='bluetoothctl connect $HEADPHONES_MAC_ADDRESS'
-bindkey -v
-
 BROWSER="$(which google-chrome-stable)"
-
 docker() {
     if [ "$1" = "compose" ]; then
         shift
@@ -130,3 +121,35 @@ docker() {
         command podman "$@"
     fi
 }
+
+vim_check() {
+  if [ -n "$NVIM" ]; then
+    nvim --server "$NVIM" --remote-send "<Cmd>tab split<CR>"
+    nvim --server "$NVIM" --remote "$@"
+
+  else
+    exec nvim "$@"
+  fi
+}
+
+alias python='python3'
+alias pip='pip3'
+alias vim='vim_check'
+alias nvim='vim_check'
+alias docker-compose='podman-compose'
+alias cd='z'
+alias copy='xclip -sel clip'
+alias connect-airpods='bluetoothctl connect $AIRPODS_MAC_ADDRESS'
+alias connect-headphones='bluetoothctl connect $HEADPHONES_MAC_ADDRESS'
+alias openr=$(whence -p open)
+alias open='ranger'
+alias htop='btop'
+alias ls='eza'
+alias lw='eza --time=created --sort=created --group-directories-first --long --no-permissions --no-user --no-filesize'
+alias nixfind='f() { nix-env -qaP "$1" 2>/dev/null | column -t; }; f'
+
+
+bindkey -v
+
+
+

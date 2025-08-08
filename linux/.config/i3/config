@@ -20,7 +20,9 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:Poppins Medium 10
-font pango:Jetbrains Mono Bold 11
+# font pango:Jetbrains Mono Bold 11
+# font pango:Tweak Mono Bold 11
+font pango:Iosevka548 Bold 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -64,7 +66,8 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 # Note: *1
-bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Jetbrains Mono'
+# bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Jetbrains Mono'
+bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Iosevka548 Bold'
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -199,13 +202,15 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	font pango:Jetbrains Mono Bold 10
+	#font pango:Jetbrains Mono Bold 10
+	#font pango:Tweak Mono Bold 11
+	font pango:Iosevka548 Bold 11
 	#position top
 	#tray_output none
         status_command i3status-rs ~/.config/i3status-rust/config.toml
 	colors {
 		background #0a0b0c
-		focused_workspace #3a3b3c #3a3b3c #ffffff
+		focused_workspace #4a4b4c #3a3b3c #ffffff
 		inactive_workspace #0a0b0c #0a0b0c #777777
 	}	
 }
@@ -217,12 +222,15 @@ bindsym $mod+Shift+period exec $HOME/.config/i3/raise_volume.sh
 bindsym $mod+n bar mode dock
 bindsym $mod+m bar mode invisible
 bindsym $mod+SHIFT+s exec $HOME/.config/i3/take_screenshot.sh
+exec --no-startup-id xrandr --output eDP-1 --mode 1728x972_60.00
 exec --no-startup-id "xmodmap $HOME/.Xmodmap"
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id $HOME/.nix-profile/bin/dunst
-exec --no-startup-id "feh --bg-fill /home/kastriotkastrati/data/wallpapers/wallpaper-18.png"
-exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf -b
+exec --no-startup-id "feh --bg-fill /home/kastriotkastrati/data/wallpapers/wp-8.jpg"
+exec --no-startup-id picom --config $HOME/.config/picom/picom.conf -b
+
 for_window [class="^.*"] border pixel 0
+for_window [class="Alacritty"] title_format %title
 
 client.focused          #2a2b2c #1a1b1c #777777 #3a3b3c
 client.unfocused        #1a1b1c #0a0b0c #777777 #0a0b0c
@@ -230,5 +238,5 @@ client.focused_inactive #1a1b1c #0a0b0c #777777 #0a0b0c
 client.urgent           #1a1b1c #ff0000 #ffffff #0a0b0c
 
 workspace_layout tabbed
-gaps inner 5
-gaps outer 5
+#gaps inner 5
+#gaps outer 5

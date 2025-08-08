@@ -102,12 +102,12 @@
     },
     {
       "before": ["]", "d"],
-      "commands": ["editor.action.marker.nextInFiles"],
+      "commands": ["editor.action.marker.next"],
       "silent": true
     },
     {
       "before": ["[", "d"],
-      "commands": ["editor.action.marker.prevInFiles"],
+      "commands": ["editor.action.marker.prev"],
       "silent": true
     }
   ],
@@ -139,7 +139,7 @@
   },
 
   "editor.fontSize": 20,
-  "editor.fontFamily": "Agave, 'Meslo LG S', 'Jetbrains Mono', Monoid, monospace, Menlo",
+  "editor.fontFamily": "'Iosevka548', 'Tweak Mono', Agave, 'Meslo LG S', 'Jetbrains Mono', Monoid, monospace, Menlo",
   "editor.detectIndentation": false,
   "editor.renderLineHighlight": "none",
   "editor.glyphMargin": false,
@@ -150,7 +150,7 @@
   "editor.renderWhitespace": "none",
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.smoothScrolling": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.minimap.enabled": false,
@@ -161,8 +161,8 @@
   "editor.colorDecorators": false,
   "editor.formatOnSave": true,
   "editor.lightbulb.enabled": "off",
-  "editor.lineHeight": 1.05,
-  "editor.cursorSurroundingLines": 25,
+  "editor.lineHeight": 1.1,
+  "editor.cursorSurroundingLines": 10,
   "editor.overviewRulerBorder": false,
 
   "window.commandCenter": false,
@@ -194,6 +194,5 @@
     "markdown": false,
     "scminput": false
   },
-  "workbench.colorTheme": "GitHub Dark Dimmed",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "workbench.colorTheme": "Tinted"
 }
