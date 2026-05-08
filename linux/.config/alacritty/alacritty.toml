@@ -1,33 +1,50 @@
+[general]
 import = ["~/.config/alacritty/gruber.toml"]
 
 [scrolling]
 history = 10000
 
 [font]
-#normal = { family = "Agave", style = "Regular" }
+normal = { family = "Agave", style = "Regular" }
 #normal = { family = "Monoid", style = "Regular" }
 #normal = { family = "Meslo LG S", style = "Regular" }
 #normal = { family = "Jetbrains Mono", style = "Regular" }
+#normal = { family = "Iosevka548", style = "Regular" }
 #normal = { family = "Tweak Mono", style = "Regular" }
-normal = { family = "Iosevka548", style = "Regular" }
+#normal = { family = "Iosevka500", style = "Regular" }
+#normal = { family = "DejaVu Sans Mono", style = "Regular" }
+#normal = { family = "SF Mono", style = "Regular" }
+#normal = { family = "Noto Sans Mono", style = "Regular" }
+#normal = { family = "Hack", style = "Regular" }
+#normal = { family = "Hack-ZeroSlash", style = "Regular" }
+#normal = { family = "0xProto NL", style = "Regular" }
 
-#bold = { style = "Regular" }
+bold = { style = "Regular" }
 
 size = 19
-offset = { y = -5 }
+offset = { y = 3 }
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
-opacity = 1
+opacity = 0.93
 dynamic_title = true
 
 [window.padding]
 x = 15
 y = 15
 
+[cursor]
+style = { shape = "Block", blinking = "Always" }
 
-[shell]
-program = "nvim"
-args = ["+terminal", "zsh"]
+
+[[keyboard.bindings]]
+key = "Escape"
+mode = "~Vi|~Alt"
+action = "ToggleViMode"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001b\r"

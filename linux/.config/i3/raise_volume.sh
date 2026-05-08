@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MAX_VOLUME=150
+MAX_VOLUME=250
 current_volume=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1)
 potential_new_volume=$((current_volume + 5))
 potential_new_volume_exceeds_max=$( [ "$potential_new_volume" -gt "$MAX_VOLUME" ] && echo 0 || echo 1 )

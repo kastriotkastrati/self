@@ -30,16 +30,12 @@
   },
   {
     "key": "ctrl+shift+;",
-    "command": "find-it-faster.findWithinFiles"
+    "command": "multiCommand.findItFasterBottom"
   },
   {
-    "key": "ctrl+shift+u",
-    "command": "-find-it-faster.findWithinFiles"
-  },
-  {
-    "key": "ctrl+shift+;",
-    "command": "-breadcrumbs.focus",
-    "when": "breadcrumbsPossible && breadcrumbsVisible"
+    "key": "escape",
+    "command": "workbench.action.openPreviousEditor",
+    "when": "terminalFocus && activeEditor"
   },
   {
     "key": "ctrl+shift+[IntlBackslash]",
@@ -183,5 +179,9 @@
     "key": "ctrl+l",
     "command": "search.action.focusSearchList",
     "when": "searchViewletVisible"
+  },
+  {
+    "key": "escape",
+    "command": "-vsnetrw.close"
   }
 ]

@@ -1,14 +1,17 @@
 {
   "workbench.colorCustomizations": {
     "editor.oldColor": "#07/08/09",
+    "editor.oldColor2": "#0b/0c/0e",
+    "editor.oldColor3": "#0c/0d/0f",
+    "editor.oldColor4": "#13/14/16",
+    "editor.oldColor5": "#0c/0d/10",
 
-    "editor.background": "#0c0d10",
+    "editor.background": "#0a0b0c",
     "editor.inactiveSelectionBackground": "#2E3339aa",
-    "editor.lineHighlightBackground": "#0c0d10",
+    "editor.lineHighlightBackground": "#0a0b0c",
     "editor.selectionBackground": "#2E3339",
     "editor.selectionHighlightBackground": "#ffffff00",
-    "editor.foldBackground": "#0f1013f0",
-
+    "editor.foldBackground": "#0a0b0cf0",
     "editorIndentGuide.activeBackground1": "#0c0f15",
     "editorIndentGuide.background1": "#0c0f15",
 
@@ -26,26 +29,26 @@
     "quickInputList.focusBackground": "#161719",
     "quickInputList.focusForeground": "#999",
 
-    "sideBar.background": "#0c0d10",
-    "sideBar.border": "#0c0d10",
-    "sideBarSectionHeader.border": "#0c0d10",
+    "sideBar.background": "#0a0b0c",
+    "sideBar.border": "#0a0b0c",
+    "sideBarSectionHeader.border": "#0a0b0c",
     "sideBarSectionHeader.foreground": "#aaa",
-    "sideBarSectionHeader.background": "#0c0d10",
+    "sideBarSectionHeader.background": "#0a0b0c",
     "sideBarTitle.foreground": "#aaa",
 
-    "tab.inactiveBackground": "#0c0d10",
-    "tab.activeBackground": "#0c0d0f",
-    "tab.border": "#0c0d10",
-    "tab.lastPinnedBorder": "#0c0d10",
-    "tab.activeBorder": "#0c0d10",
-    "tab.activeBorderTop": "#0c0d10",
+    "tab.inactiveBackground": "#0a0b0c",
+    "tab.activeBackground": "#0a0b0c",
+    "tab.border": "#0a0b0c",
+    "tab.lastPinnedBorder": "#0a0b0c",
+    "tab.activeBorder": "#0a0b0c",
+    "tab.activeBorderTop": "#0a0b0c",
     "tab.activeForeground": "#dadbde",
     "tab.inactiveForeground": "#4a4b4e",
 
-    "titleBar.activeBackground": "#0c0d10",
-    "titleBar.inactiveBackground": "#0c0d10",
+    "titleBar.activeBackground": "#0a0b0c",
+    "titleBar.inactiveBackground": "#0a0b0c",
     "titleBar.activeForeground": "#aaa",
-    "titleBar.border": "#0c0d10",
+    "titleBar.border": "#0a0b0c",
 
     "list.hoverBackground": "#2E3339",
     "list.hoverForeground": "#aaa",
@@ -53,39 +56,53 @@
     "list.activeSelectionForeground": "#aaa",
     "list.inactiveSelectionBackground": "#2E3339",
 
-    "panel.background": "#0c0d10",
-    "panel.border": "#0c0d10",
+    "panel.background": "#0a0b0c",
+    "panel.border": "#0a0b0c",
 
-    "statusBar.background": "#0c0d10",
-    "statusBar.noFolderBackground": "#0c0d10",
-    "statusBar.border": "#0c0d10",
+    "statusBar.background": "#0a0b0c",
+    "statusBar.noFolderBackground": "#0a0b0c",
+    "statusBar.border": "#0a0b0c",
     "statusBar.foreground": "#aaabae",
 
-    "activityBar.background": "#0c0d10",
-    "activityBar.border": "#0c0d10",
+    "activityBar.background": "#0a0b0c",
+    "activityBar.border": "#0a0b0c",
 
-    "editorGroupHeader.tabsBackground": "#0c0d10",
-    "editorRuler.foreground": "#0c0d10",
-    "editorGutter.background": "#0c0d10",
+    "editorGroupHeader.tabsBackground": "#0a0b0c",
+    "editorRuler.foreground": "#18191b",
+    "editorGutter.background": "#0a0b0c",
+    // "editorGutter.background": "#1c1d1e",
     "editorLineNumber.activeForeground": "#aaa",
 
-    "menu.border": "#0c0d10",
-    "contrastBorder": "#0c0d10",
-    "breadcrumb.background": "#0c0d10",
+    "menu.border": "#0a0b0c",
+    "contrastBorder": "#0a0b0c",
+    "breadcrumb.background": "#0a0b0c",
     "editorCursor.foreground": "#bbb",
-    "scrollbar.shadow": "#ffffff00"
+    "scrollbar.shadow": "#ffffff00",
+
+    // "editorError.foreground": "#00000000",
+    "editorWarning.foreground": "#00000000",
+    "editorInfo.foreground": "#00000000",
+    "editorHint.foreground": "#00000000"
   },
+
   "vim.foldfix": true,
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": "j", "after": "gj" },
     { "before": "k", "after": "gk" },
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "w"]
+    },
     { "before": ["<leader>", "a"], "commands": ["workbench.view.explorer"] },
     {
       "before": ["<leader>", "d"],
@@ -109,9 +126,13 @@
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prev"],
       "silent": true
+    },
+    {
+      "before": ["-"],
+      "commands": ["vsnetrw.open"],
+      "when": "editorLangId != vsnetrw"
     }
   ],
-  "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,
@@ -138,15 +159,18 @@
     "vscodevim.vim": 1
   },
 
-  "editor.fontSize": 20,
-  "editor.fontFamily": "'Iosevka548', 'Tweak Mono', Agave, 'Meslo LG S', 'Jetbrains Mono', Monoid, monospace, Menlo",
+  "update.mode": "none",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Agave, 'Jetbrains Mono', 'Tweak Mono', '0xProto NL', 'Hack-ZeroSlash', Iosevka548, 'SF Mono', 'Noto Sans Mono', Menlo, 'Meslo LG S', 'DejaVu Sans Mono', Monoid, monospace",
   "editor.detectIndentation": false,
   "editor.renderLineHighlight": "none",
   "editor.glyphMargin": false,
   "editor.snippets.codeActions.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "editor.lineNumbers": "relative",
+  //   "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
   "editor.renderWhitespace": "none",
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.scrollbar.horizontal": "hidden",
@@ -161,12 +185,16 @@
   "editor.colorDecorators": false,
   "editor.formatOnSave": true,
   "editor.lightbulb.enabled": "off",
-  "editor.lineHeight": 1.1,
   "editor.cursorSurroundingLines": 10,
   "editor.overviewRulerBorder": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.rulers": [],
+  "editor.matchBrackets": "never",
+  "editor.codeLens": false,
 
   "window.commandCenter": false,
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "hidden",
+  "window.title": "${dirty} ${separator} ${activeEditorMedium}",
 
   "workbench.activityBar.location": "hidden",
   "workbench.sideBar.location": "right",
@@ -174,19 +202,27 @@
   "workbench.iconTheme": "city-lights-icons-vsc",
   "workbench.tips.enabled": false,
   "workbench.editor.showIcons": false,
+  "workbench.editor.showTabs": "none",
   "workbench.tree.renderIndentGuides": "none",
+  "workbench.list.smoothScrolling": false,
+  "workbench.reduceMotion": "on",
+  "workbench.editor.closeEmptyGroups": true,
+
+  "search.quickOpen.history.filterSortOrder": "recency",
+  "search.sortOrder": "modified",
 
   "rust-analyzer.lens.debug.enable": false,
   "rust-analyzer.lens.implementations.enable": false,
   "rust-analyzer.lens.run.enable": false,
   "rust-analyzer.lens.enable": false,
 
+  "find-it-faster.general.useTerminalInEditor": false,
+  "find-it-faster.general.killTerminalAfterUse": true,
+
   "breadcrumbs.enabled": false,
-  "find-it-faster.general.useTerminalInEditor": true,
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "scm.diffDecorations": "overview",
   "rust-analyzer.inlayHints.reborrowHints.enable": "always",
-  "terminal.integrated.fontSize": 20,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "github.copilot.enable": {
     "*": true,
@@ -194,5 +230,26 @@
     "markdown": false,
     "scminput": false
   },
-  "workbench.colorTheme": "Tinted"
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.findItFasterBottom",
+      "sequence": ["find-it-faster.findWithinFiles"]
+    }
+  ],
+
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.tabs.enableAnimation": false,
+  "terminal.integrated.enableVisualBell": false,
+  "terminal.integrated.fontSize": 20,
+  "extensions.ignoreRecommendations": true,
+  "telemetry.telemetryLevel": "off",
+  "editor.lineHeight": 1.3,
+  "workbench.colorTheme": "Flare Theme",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false
 }

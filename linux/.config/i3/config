@@ -73,6 +73,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Tweak Mono Bold'
 # bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Iosevka500 Bold'
 bindsym $mod+space exec --no-startup-id rofi -show drun -theme ~/.config/rofi/themes/spotlight-dark.rasi
+# bindsym $mod+space exec --no-startup-id vicinae toggle
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -150,9 +151,9 @@ bindsym $mod+i workspace number $ws2
 bindsym $mod+o workspace number $ws3
 bindsym $mod+p workspace number $ws4
 bindsym $mod+backslash workspace number $ws5
-bindsym $mod+apostrophe workspace number $ws6
-bindsym $mod+bracketleft workspace number $ws7
-bindsym $mod+bracketright workspace number $ws8
+bindsym $mod+semicolon workspace number $ws6
+bindsym $mod+u workspace number $ws7
+bindsym $mod+y workspace number $ws8
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1; workspace $ws1
@@ -160,9 +161,9 @@ bindsym $mod+Shift+i move container to workspace number $ws2; workspace $ws2
 bindsym $mod+Shift+o move container to workspace number $ws3; workspace $ws3
 bindsym $mod+Shift+p move container to workspace number $ws4; workspace $ws4
 bindsym $mod+Shift+backslash move container to workspace number $ws5; workspace $ws5
-bindsym $mod+Shift+apostrophe move container to workspace number $ws6; workspace $ws6
-bindsym $mod+Shift+bracketleft move container to workspace number $ws7; workspace $ws7
-bindsym $mod+Shift+bracketright move container to workspace number $ws8; workspace $ws8
+bindsym $mod+Shift+semicolon move container to workspace number $ws6; workspace $ws6
+bindsym $mod+Shift+u move container to workspace number $ws7; workspace $ws7
+bindsym $mod+Shift+y move container to workspace number $ws8; workspace $ws8
 
 
 # reload the configuration file
@@ -202,17 +203,17 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	font pango:Jetbrains Mono Bold 10
-	#font pango:Iosevka548 Bold 11
+	#font pango:Jetbrains Mono Bold 10
+	font pango:Iosevka548 Bold 10
 	#font pango:Tweak Mono Bold 11
 	#font pango:Iosevka500 Bold 11
 
-	position top
+	#position top
 	#tray_output none
         status_command i3status-rs ~/.config/i3status-rust/config.toml
 	colors {
 		background #0a0b0c
-		focused_workspace #0a0b0c #0a0b0c #ffffff
+		focused_workspace #1a1b1c #1a1b1c #888888
 		inactive_workspace #0a0b0c #0a0b0c #555555
 		active_workspace #0a0b0c #0a0b0c #555555
 	}	
@@ -230,11 +231,12 @@ bindsym $mod+SHIFT+x exec "maim -s | xclip -selection clipboard -t image/png"
 exec --no-startup-id xrandr --output eDP-1 --mode 1728x972_60.00
 exec --no-startup-id "xmodmap $HOME/.Xmodmap"
 exec --no-startup-id $HOME/.nix-profile/bin/dunst
-exec --no-startup-id "feh --bg-fill /home/kastriotkastrati/data/wallpapers/wp-7.jpg"
+exec --no-startup-id "feh --bg-fill /home/kastriotkastrati/data/wallpapers/wp-22.jpg"
+# exec --no-startup-id vicinae server
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf -b
 
 
-client.focused          #1a1b1c #1a1b1c #777777 #3a3b3c
+client.focused          #111213 #111213 #777777 #3a3b3c
 client.unfocused        #0a0b0c #0a0b0c #777777 #0a0b0c
 client.focused_inactive #0a0b0c #0a0b0c #777777 #0a0b0c
 client.urgent           #0a0b0c #ff0000 #ffffff #0a0b0c
@@ -250,4 +252,6 @@ for_window [class=".*"] border normal
 #for_window [class="^.*"] border pixel 0
 #for_window [class="Google-chrome"] border pixel 0
 for_window [class="firefox"] border pixel 0
+for_window [class="vicinae"] border pixel 0
+for_window [class="Brave-browser"] border pixel 0
 hide_edge_borders both

@@ -105,6 +105,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+function precmd {
+  print -Pn "\e]0;%~\a"
+}
 
 . ~/data/.shell-variables
 . ~/.config/.zshrc-private
@@ -112,31 +115,9 @@ source $ZSH/oh-my-zsh.sh
 export PIPENV_VENV_IN_PROJECT=1
 
 eval "$(zoxide init zsh)"
-BROWSER="$(which google-chrome-stable)"
-docker() {
-    if [ "$1" = "compose" ]; then
-        shift
-        podman-compose "$@"
-    else
-        command podman "$@"
-    fi
-}
-
-vim_check() {
-  if [ -n "$NVIM" ]; then
-    nvim --server "$NVIM" --remote-send "<Cmd>tab split<CR>"
-    nvim --server "$NVIM" --remote "$@"
-
-  else
-    exec nvim "$@"
-  fi
-}
-
 alias python='python3'
 alias pip='pip3'
-alias vim='vim_check'
-alias nvim='vim_check'
-alias docker-compose='podman-compose'
+alias vim='nvim'
 alias cd='z'
 alias copy='xclip -sel clip'
 alias connect-airpods='bluetoothctl connect $AIRPODS_MAC_ADDRESS'
@@ -145,11 +126,53 @@ alias openr=$(whence -p open)
 alias open='ranger'
 alias htop='btop'
 alias ls='eza'
-alias lw='eza --time=created --sort=created --group-directories-first --long --no-permissions --no-user --no-filesize'
+alias lw='eza --time=created --sort=created --group-directories-first --long --no-user --no-filesize'
 alias nixfind='f() { nix-env -qaP "$1" 2>/dev/null | column -t; }; f'
+
+# Claude Code: cap auto-compact window (in thousands) and optionally set effort level
+# Usage: claudew <window-k> [effort] [claude args...]
+#   claudew 300            -> 300k window
+#   claudew 300 max        -> 300k window, effort=max
+#   claudew 300 xhigh -c   -> 300k window, effort=xhigh, passes -c to claude
+claudew() {
+  local window_k="${1:-200}"
+  shift
+  local effort=""
+  if [[ "${1:-}" =~ ^(low|medium|high|xhigh|max)$ ]]; then
+    effort="$1"
+    shift
+  fi
+  local env_args=(
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW=$(( window_k * 1000 ))"
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=95"
+  )
+  [[ -n "$effort" ]] && env_args+=("CLAUDE_CODE_EFFORT_LEVEL=$effort")
+  env "${env_args[@]}" claude "$@"
+}
+alias claude200='claudew 200'
+alias claude300='claudew 300'
+alias claude500='claudew 500'
+alias claude1m='command claude'
+
+# Force explicit context-window choice — bare `claude` errors out
+claude() {
+  if [[ $# -eq 0 ]]; then
+    print -u2 "claude: pick a context window — claude200 / claude300 / claude500 / claude1m, or 'claudew <N-thousand>'"
+    return 2
+  fi
+  command claude "$@"
+}
 
 
 bindkey -v
 
 
 
+
+# bun completions
+[ -s "/home/kastriotkastrati/.bun/_bun" ] && source "/home/kastriotkastrati/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export LIBVA_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri
