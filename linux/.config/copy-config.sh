@@ -6,6 +6,7 @@ declare -A pairs=(
   ["$HOME/.zshrc"]="$repo/.zshrc"
   ["$HOME/.profile"]="$repo/.profile"
   ["$HOME/.config/i3/config"]="$repo/.config/i3/config"
+  ["$HOME/.config/i3/switch-user.sh"]="$repo/.config/i3/switch-user.sh"
   ["$HOME/.config/picom/picom.conf"]="$repo/.config/picom/picom.conf"
   ["$HOME/.config/alacritty/alacritty.toml"]="$repo/.config/alacritty/alacritty.toml"
   ["$HOME/.config/Code/User/settings.json"]="$repo/.config/Code/settings.json"

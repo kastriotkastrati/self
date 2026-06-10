@@ -40,6 +40,9 @@ block = "net"
 interval = 10
 format = "{$ssid|$device}"
 inactive_format = "DOWN"
+[[block.click]]
+button = "left"
+cmd = "alacritty --class wifi-tui -e /home/kastriotkastrati/coding/network-tool/network-cli/target/release/network-cli"
 
 [[block]]
 block = "battery"
@@ -60,3 +63,11 @@ cmd = "pavucontrol"
 block = "time"
 interval = 5
 format = "$timestamp.datetime(f:'%a %e %B        %-I:%M %p')"
+
+[[block]]
+block = "custom"
+command = "echo '→ kkhlc'"
+interval = "once"
+[[block.click]]
+button = "left"
+cmd = "/home/kastriotkastrati/.config/i3/switch-user.sh kkhlc"
