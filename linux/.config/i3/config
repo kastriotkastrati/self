@@ -51,6 +51,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -61,7 +63,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec nixGL alacritty
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -73,7 +75,6 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Tweak Mono Bold'
 # bindsym $mod+space exec --no-startup-id dmenu_run --nb '#0a0b0c' --sb '#2a2b2c' --font 'Iosevka500 Bold'
 bindsym $mod+space exec --no-startup-id rofi -show drun -theme ~/.config/rofi/themes/spotlight-dark.rasi
-# bindsym $mod+space exec --no-startup-id vicinae toggle
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -209,7 +210,7 @@ bar {
 	#font pango:Iosevka500 Bold 11
 
 	#position top
-	#tray_output none
+	tray_output none
         status_command i3status-rs ~/.config/i3status-rust/config.toml
 	colors {
 		background #0a0b0c
@@ -227,31 +228,32 @@ bindsym $mod+n bar mode dock
 bindsym $mod+m bar mode invisible
 bindsym $mod+SHIFT+s exec $HOME/.config/i3/take_screenshot.sh
 bindsym $mod+SHIFT+x exec "maim -s | xclip -selection clipboard -t image/png"
+bindsym $mod+comma exec --no-startup-id $HOME/.config/i3/switch-user.sh kkhlc
 
-exec --no-startup-id xrandr --output eDP-1 --mode 1728x972_60.00
+exec_always --no-startup-id xset s off -dpms
 exec --no-startup-id "xmodmap $HOME/.Xmodmap"
-exec --no-startup-id $HOME/.nix-profile/bin/dunst
-exec --no-startup-id "feh --bg-fill /home/kastriotkastrati/data/wallpapers/wp-22.jpg"
-# exec --no-startup-id vicinae server
+exec --no-startup-id dunst
+exec --no-startup-id "feh --bg-fill /home/kastriotkastrati/data/wallpapers/wp-1.jpg"
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf -b
 
 
-client.focused          #111213 #111213 #777777 #3a3b3c
-client.unfocused        #0a0b0c #0a0b0c #777777 #0a0b0c
-client.focused_inactive #0a0b0c #0a0b0c #777777 #0a0b0c
-client.urgent           #0a0b0c #ff0000 #ffffff #0a0b0c
+#client.focused          #111213 #111213 #777777 #3a3b3c
+#client.unfocused        #0a0b0c #0a0b0c #777777 #0a0b0c
+#client.focused_inactive #0a0b0c #0a0b0c #777777 #0a0b0c
+#client.urgent           #0a0b0c #ff0000 #ffffff #0a0b0c
+
+client.focused          #121314 #121314 #777777 #3a3b3c
+client.unfocused        #121314 #0a0b0c #777777 #0a0b0c
+client.focused_inactive #121314 #0a0b0c #777777 #0a0b0c
+client.urgent           #121314 #ff0000 #ffffff #0a0b0c
+
+
 
 
 workspace_layout tabbed
-#workspace_layout default
-
-#gaps inner 5
-#gaps outer 5
 
 for_window [class=".*"] border normal
-#for_window [class="^.*"] border pixel 0
-#for_window [class="Google-chrome"] border pixel 0
+for_window [class="wifi-tui"] floating enable, border none, resize set 640 440, move position center
 for_window [class="firefox"] border pixel 0
-for_window [class="vicinae"] border pixel 0
 for_window [class="Brave-browser"] border pixel 0
 hide_edge_borders both

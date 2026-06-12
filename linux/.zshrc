@@ -109,19 +109,18 @@ function precmd {
   print -Pn "\e]0;%~\a"
 }
 
-. ~/data/.shell-variables
+. ~/data/env-variables/.shell-variables
 . ~/.config/.zshrc-private
 
 export PIPENV_VENV_IN_PROJECT=1
 
-eval "$(zoxide init zsh)"
 alias python='python3'
 alias pip='pip3'
 alias vim='nvim'
-alias cd='z'
-alias copy='xclip -sel clip'
+alias copy='xclip -selection clipboard'
 alias connect-airpods='bluetoothctl connect $AIRPODS_MAC_ADDRESS'
 alias connect-headphones='bluetoothctl connect $HEADPHONES_MAC_ADDRESS'
+alias connect-earbuds='bluetoothctl connect $EARBUDS_MAC_ADDRESS'
 alias openr=$(whence -p open)
 alias open='ranger'
 alias htop='btop'
@@ -129,11 +128,13 @@ alias ls='eza'
 alias lw='eza --time=created --sort=created --group-directories-first --long --no-user --no-filesize'
 alias nixfind='f() { nix-env -qaP "$1" 2>/dev/null | column -t; }; f'
 
-# Claude Code: cap auto-compact window (in thousands) and optionally set effort level
-# Usage: claudew <window-k> [effort] [claude args...]
-#   claudew 300            -> 300k window
-#   claudew 300 max        -> 300k window, effort=max
-#   claudew 300 xhigh -c   -> 300k window, effort=xhigh, passes -c to claude
+lvim() {
+  (
+    source ~/coding/envs/nodevenv/bin/activate
+    NVIM_APPNAME=lvim nvim "$@"
+  )
+}
+
 claudew() {
   local window_k="${1:-200}"
   shift
@@ -142,19 +143,29 @@ claudew() {
     effort="$1"
     shift
   fi
+  local model=""
+  case "${1:-}" in
+    opus) model="claude-opus-4-8[1m]"; shift ;;
+    fable) model="claude-fable-5[1m]"; shift ;;
+    sonnet) model="claude-sonnet-4-6[1m]"; shift ;;
+    haiku) model="claude-haiku-4-5"; shift ;;
+  esac
+  if [[ -z "$model" ]]; then
+    print -u2 "claude: pick a model — opus / fable / sonnet / haiku"
+    return 2
+  fi
   local env_args=(
     "CLAUDE_CODE_AUTO_COMPACT_WINDOW=$(( window_k * 1000 ))"
     "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=95"
   )
   [[ -n "$effort" ]] && env_args+=("CLAUDE_CODE_EFFORT_LEVEL=$effort")
-  env "${env_args[@]}" claude "$@"
+  env "${env_args[@]}" claude --model "$model" "$@"
 }
 alias claude200='claudew 200'
 alias claude300='claudew 300'
 alias claude500='claudew 500'
-alias claude1m='command claude'
+alias claude1m='claudew 1000'
 
-# Force explicit context-window choice — bare `claude` errors out
 claude() {
   if [[ $# -eq 0 ]]; then
     print -u2 "claude: pick a context window — claude200 / claude300 / claude500 / claude1m, or 'claudew <N-thousand>'"
@@ -169,10 +180,22 @@ bindkey -v
 
 
 
+export LIBVA_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri
+export PAGER='less -FX'
+
+[ -d "$HOME/.local/bin" ] && export PATH="$HOME/.local/bin:$PATH"
+[ -d "$HOME/.cargo/bin" ] && export PATH="$HOME/.cargo/bin:$PATH"
+
+if [[ -o interactive ]]; then
+  eval "$(zoxide init zsh)"
+  alias cd='z'
+fi
+
+export EDITOR='vim'
+
 # bun completions
 [ -s "/home/kastriotkastrati/.bun/_bun" ] && source "/home/kastriotkastrati/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-export LIBVA_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri

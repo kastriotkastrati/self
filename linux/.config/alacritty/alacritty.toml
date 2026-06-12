@@ -5,11 +5,11 @@ import = ["~/.config/alacritty/gruber.toml"]
 history = 10000
 
 [font]
-normal = { family = "Agave", style = "Regular" }
+#normal = { family = "Agave", style = "Regular" }
 #normal = { family = "Monoid", style = "Regular" }
 #normal = { family = "Meslo LG S", style = "Regular" }
 #normal = { family = "Jetbrains Mono", style = "Regular" }
-#normal = { family = "Iosevka548", style = "Regular" }
+normal = { family = "Iosevka548", style = "Regular" }
 #normal = { family = "Tweak Mono", style = "Regular" }
 #normal = { family = "Iosevka500", style = "Regular" }
 #normal = { family = "DejaVu Sans Mono", style = "Regular" }
@@ -21,14 +21,14 @@ normal = { family = "Agave", style = "Regular" }
 
 bold = { style = "Regular" }
 
-size = 19
-offset = { y = 3 }
+size = 16
+offset = { y = -2 }
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
-opacity = 0.93
+opacity = 1
 dynamic_title = true
 
 [window.padding]
