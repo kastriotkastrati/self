@@ -21,11 +21,11 @@ normal = { family = "Iosevka548", style = "Regular" }
 
 bold = { style = "Regular" }
 
-size = 16
-offset = { y = -2 }
+size = 15
+offset = { y = -1 }
 
-[env]
-WINIT_X11_SCALE_FACTOR = "1.0"
+#[env]
+#WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
 opacity = 1

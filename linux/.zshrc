@@ -174,6 +174,28 @@ claude() {
   command claude "$@"
 }
 
+opencode() {
+  local wid=$ALACRITTY_WINDOW_ID
+  [[ -n $wid ]] || { command opencode "$@"; return; }
+  alacritty msg config -w $wid 'keyboard.bindings=[{ key = "Escape", mode = "~Vi|Alt", action = "ToggleViMode" }]'
+  trap "alacritty msg config -w $wid -r" EXIT
+  command opencode "$@"
+}
+
+qwen() {
+  (
+    source ~/coding/nodevenv/bin/activate
+    command qwen "$@"
+  )
+}
+
+pi() {
+  (
+    source ~/coding/nodevenv/bin/activate
+    command pi "$@"
+  )
+}
+
 
 bindkey -v
 
