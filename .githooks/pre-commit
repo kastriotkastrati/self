@@ -1,0 +1,25 @@
+#!/bin/bash
+
+pat='([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}|BEGIN [A-Z ]*PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_|sk-ant-|sk-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|xox[abpr]-|glpat-|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}|(PASSWORD|PASSWD|TOKEN|SECRET|API_KEY)[A-Z_]*=["'\'']?[^$"'\'' ]{8,}'
+
+private=$(git diff --cached --name-only --diff-filter=ACR | grep -E '\.local(\.|$)|-private$')
+if [ -n "$private" ]; then
+  echo "pre-commit: private files staged:"
+  echo "$private"
+  exit 1
+fi
+
+hits=$(git diff --cached -U0 --diff-filter=ACM -- . ':!.githooks' | while IFS= read -r line; do
+  case $line in
+    "+++ b/"*) file=${line#+++ b/} ;;
+    "+++"*) ;;
+    +*) printf '%s\n' "${line#+}" | grep -qE "$pat" && printf '%s: %s\n' "$file" "${line#+}" ;;
+  esac
+done)
+
+if [ -n "$hits" ]; then
+  echo "pre-commit: this looks personal:"
+  echo "$hits"
+  echo "move it to a .local or -private file, or commit with --no-verify if it's fine"
+  exit 1
+fi

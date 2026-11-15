@@ -205,8 +205,8 @@
         "vscodevim.vim": 1
     },
     "update.mode": "none",
-    "editor.fontSize": 16,
-    "editor.fontFamily": "Iosevka548, Agave, 'Jetbrains Mono', 'Tweak Mono', '0xProto NL', 'Hack-ZeroSlash', 'SF Mono', 'Noto Sans Mono', Menlo, 'Meslo LG S', 'DejaVu Sans Mono', Monoid, monospace",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'Hack-ZeroSlash', 'Comic Mono 548', Iosevka548, Agave, 'Jetbrains Mono', 'Tweak Mono', '0xProto NL', 'SF Mono', 'Noto Sans Mono', Menlo, 'Meslo LG S', 'DejaVu Sans Mono', Monoid, monospace",
     "editor.detectIndentation": false,
     "editor.renderLineHighlight": "none",
     "editor.glyphMargin": false,

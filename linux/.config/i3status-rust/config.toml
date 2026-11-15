@@ -36,13 +36,22 @@ interval = 10
 format = "$mem_used_percents.eng(w:2)"
 
 [[block]]
+block = "disk_space"
+path = "/"
+info_type = "used"
+interval = 60
+warning = 80.0
+alert = 90.0
+format = "disk: $percentage.eng(w:2)"
+
+[[block]]
 block = "net"
 interval = 10
 format = "{$ssid|$device}"
 inactive_format = "DOWN"
 [[block.click]]
 button = "left"
-cmd = "alacritty --class wifi-tui -e /home/kastriotkastrati/coding/network-tool/network-cli/target/release/network-cli"
+cmd = "alacritty --class wifi-tui -e $HOME/coding/network-tool/network-cli/target/release/network-cli"
 
 [[block]]
 block = "battery"

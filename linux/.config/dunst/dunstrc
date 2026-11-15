@@ -44,6 +44,6 @@
 [slack-mrkdwn-rewrite]
     appname = "Slack"
     body = "*<*|*>*"
-    script = /home/kastriotkastrati/.config/dunst/mrkdwn-clean.sh
+    script = ~/.config/dunst/mrkdwn-clean.sh
     skip_display = yes
     history_ignore = yes

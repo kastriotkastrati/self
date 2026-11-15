@@ -229,14 +229,15 @@ bindsym $mod+Shift+comma exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym $mod+Shift+period exec $HOME/.config/i3/raise_volume.sh
 bindsym $mod+n bar mode dock
 bindsym $mod+m bar mode invisible
-bindsym $mod+SHIFT+s exec $HOME/.config/i3/take_screenshot.sh
 bindsym $mod+SHIFT+x exec "maim -s | xclip -selection clipboard -t image/png"
-bindsym $mod+comma exec --no-startup-id $HOME/.config/i3/switch-user.sh kkhlc
+bindsym $mod+comma exec --no-startup-id $HOME/.config/i3/switch-user.sh 1
+bindsym $mod+slash exec --no-startup-id $HOME/.config/i3/switch-user.sh 2
 bindsym $mod+Shift+d exec --no-startup-id $HOME/.config/i3/set-dpi.sh
 
 exec_always --no-startup-id xset s off -dpms
 exec --no-startup-id "xmodmap $HOME/.Xmodmap"
-exec --no-startup-id "feh --bg-fill /home/kastriotkastrati/data/wallpapers/wp-1.jpg"
+exec --no-startup-id $HOME/.config/i3/set-dpi.sh
+exec --no-startup-id "feh --bg-fill $HOME/data/wallpapers/wp-2.jpg"
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf -b
 
 
@@ -259,4 +260,10 @@ for_window [class=".*"] border normal
 for_window [class="wifi-tui"] floating enable, border none, resize set 640 440, move position center
 for_window [class="firefox"] border pixel 0
 for_window [class="Brave-browser"] border pixel 0
+for_window [class="com.t3tools.T3Code"] border pixel 0
 hide_edge_borders both
+
+gaps inner 5
+gaps outer 5
+
+include ~/.config/i3/config.local

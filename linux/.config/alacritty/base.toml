@@ -1,0 +1,29 @@
+# base — matches the "base" VS Code theme (near-black bg, teal-gray fg, yellow/green/teal/salmon accents)
+
+[colors.primary]
+background = '#0d0d0d'
+foreground = '#b2c2bd'
+
+[colors.cursor]
+text = '#0d0d0d'
+cursor = '#b2c2bd'
+
+[colors.normal]
+black = '#2a2a2a'
+red = '#c06a55'
+green = '#80a85a'
+yellow = '#e1c84c'
+blue = '#6a93b3'
+magenta = '#b56d96'
+cyan = '#83b3af'
+white = '#9fb0aa'
+
+[colors.bright]
+black = '#5a625e'
+red = '#d68064'
+green = '#93bd6a'
+yellow = '#ecd566'
+blue = '#84acce'
+magenta = '#d488ad'
+cyan = '#9bc7c2'
+white = '#d0ddd8'

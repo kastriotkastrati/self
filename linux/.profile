@@ -25,4 +25,15 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+
+# Added by Antigravity CLI installer
+export PATH="$HOME/.local/bin:$PATH"
+
+export PATH="$HOME/.elan/bin:$PATH"
+
+# Vite+ bin (https://viteplus.dev)
+[ -f "$HOME/.config/vite-plus/env" ] && . "$HOME/.config/vite-plus/env"
+
+[ -f "$HOME/.profile.local" ] && . "$HOME/.profile.local"
