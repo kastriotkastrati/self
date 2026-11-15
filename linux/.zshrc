@@ -147,15 +147,16 @@ claudew() {
   local model=""
   case "${1:-}" in
     opus55) model="claude-opus-5-5[1m]"; shift ;;
-    opus5) model="claude-opus-5[1m]"; shift ;;
+    opus50) model="claude-opus-5[1m]"; shift ;;
     opus48) model="claude-opus-4-8[1m]"; shift ;;
     opus46) model="claude-opus-4-6[1m]"; shift ;;
-    fable) model="fable"; shift ;;
+    fable) model="claude-fable-5[1m]"; shift ;;
+    fable52) model="claude-fable-5-2[1m]"; shift ;;
     sonnet) model="claude-sonnet-4-6[1m]"; shift ;;
     haiku) model="claude-haiku-4-5"; shift ;;
   esac
   if [[ -z "$model" ]]; then
-    print -u2 "claude: pick a model — opus55 / opus5 / opus48 / opus46 / fable / sonnet / haiku"
+    print -u2 "claude: pick a model — opus55 / opus50 / opus48 / opus46 / fable / fable52 / sonnet / haiku"
     return 2
   fi
   local env_args=(
@@ -195,14 +196,15 @@ codexw() {
   fi
   local model=""
   case "${1:-}" in
-    sol|gpt56-sol|gpt-5.6-sol|gpt-sol-6|gpt-6-sol) model="gpt-6-sol"; shift ;;
+    sol|sol61|gpt61-sol|gpt-6.1-sol) model="gpt-6.1-sol"; shift ;;
+    gpt6-sol|gpt-6-sol) model="gpt-6-sol"; shift ;;
     terra|gpt56-terra|gpt-5.6-terra) model="gpt-5.6-terra"; shift ;;
-    luna|gpt56-luna|gpt-5.6-luna|gpt-luna-6|gpt-6-luna) model="gpt-6-luna"; shift ;;
-    codex53|gpt53-codex|gpt-5.3-codex) model="gpt-5.3-codex"; shift ;;
+    luna|gpt6-luna|gpt-6-luna) model="gpt-6-luna"; shift ;;
     astra|gpt6-astra|gpt-6-astra) model="gpt-6-astra"; shift ;;
+    codex53|gpt53-codex|gpt-5.3-codex) model="gpt-5.3-codex"; shift ;;
   esac
   if [[ -z "$model" ]]; then
-    print -u2 "codex: pick a model — sol / terra / luna / codex53 / astra, or 'codexw <N-thousand> [effort] <model>'"
+    print -u2 "codex: pick a model — sol / luna / astra / terra / codex53, or 'codexw <N-thousand> [effort] <model>'"
     return 2
   fi
   local config_args=(-c "model_auto_compact_token_limit=$(( window_k * 1000 ))")
@@ -226,51 +228,45 @@ codex() {
 }
 
 piw() {
-  local window_k="${1:-300}"
+  if [[ ! "${1:-}" =~ ^[0-9]+$ || ${#1} -gt 7 ]]; then
+    print -u2 "pi: context size must be a number in thousands, e.g. 'piw 200 high sonnet'"
+    return 2
+  fi
+  local window_k=$(( 10#$1 ))
   shift
-  if [[ ! "$window_k" =~ ^[0-9]+$ ]]; then
-    print -u2 "pi: context window must be a number in thousands, e.g. 200"
+  if [[ $window_k -lt 40 ]]; then
+    print -u2 "pi: context size must be at least 40 (40,000 tokens)"
     return 2
   fi
-  local effort=""
-  if [[ "${1:-}" =~ ^(low|medium|high|xhigh|max)$ ]]; then
-    effort="$1"
-    shift
-  fi
-  local model=""
+  local thinking_args=()
   case "${1:-}" in
-    opus55) model="claude-code/claude-opus-5-5"; shift ;;
-    opus5) model="claude-code/claude-opus-5"; shift ;;
-    opus48) model="claude-code/claude-opus-4-8"; shift ;;
-    opus46) model="claude-code/claude-opus-4-6"; shift ;;
-    fable) model="claude-code/claude-fable-5-1"; shift ;;
-    sonnet) model="claude-code/claude-sonnet-4-6"; shift ;;
-    haiku) model="claude-code/claude-haiku-4-5"; shift ;;
-    sol|gpt56-sol|gpt-5.6-sol|gpt-sol-6|gpt-6-sol) model="openai-codex/gpt-6-sol"; shift ;;
-    terra|gpt56-terra|gpt-5.6-terra) model="openai-codex/gpt-5.6-terra"; shift ;;
-    luna|gpt56-luna|gpt-5.6-luna|gpt-luna-6|gpt-6-luna) model="openai-codex/gpt-6-luna"; shift ;;
-    astra|gpt6-astra|gpt-6-astra) model="openai-codex/gpt-6-astra"; shift ;;
+    off|minimal|low|medium|high|xhigh|max)
+      thinking_args=(--thinking "$1")
+      shift
+      ;;
   esac
-  if [[ -z "$model" ]]; then
-    print -u2 "pi: pick a model — opus55 / opus5 / opus48 / opus46 / fable / sonnet / haiku / sol / terra / luna / astra, or 'piw <N-thousand> [effort] <model>'"
+  if [[ -z "${1:-}" || "$1" == -* ]]; then
+    print -u2 "pi: pick a model — 'piw <N-thousand> [effort] <model> [pi options]'"
     return 2
   fi
-  local pi_args=(--model "$model" --context-window "$(( window_k * 1000 ))")
-  [[ -n "$effort" ]] && pi_args+=(--thinking "$effort")
-  command pi "${pi_args[@]}" "$@"
+  local model="$1"
+  shift
+  command pi --context-window "$(( window_k * 1000 ))" --model "$model" "${thinking_args[@]}" "$@"
 }
 
 pi() {
   if [[ $# -eq 0 ]]; then
-    print -u2 "pi: pick a context window — pi200 / pi300 / pi500 / pi1m, or 'piw <N-thousand>'"
+    print -u2 "pi: pick a context window — pi200 / pi300 / pi500 / pi1m, or 'piw <N-thousand> [effort] <model>'"
     return 2
   fi
   case "${1:-}" in
     fable)
-      piw 1000 "$@"
+      shift
+      piw 1000 claude-code/claude-fable-5-1 "$@"
       ;;
     astra|gpt6-astra|gpt-6-astra)
-      piw 300 "$@"
+      shift
+      piw 300 openai-codex/gpt-6-astra "$@"
       ;;
     *)
       command pi "$@"
